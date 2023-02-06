@@ -1,10 +1,16 @@
-import "./App.css";
+import { Button } from "../button/button";
+
+import { Info } from "../info/info";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header"></header>
-    </div>
+    <>
+      <header className="main-header">
+        <h1 className="main-title">The pointing gentlemen</h1>
+        <Button />
+      </header>
+      <Info></Info>
+    </>
   );
 }
 
