@@ -1,14 +1,14 @@
 import { render, screen } from "@testing-library/react";
-import App from "./App";
+import { Button } from "./button";
 
 describe("Given the App component", () => {
   describe("When called upon it", () => {
-    test("renders learn react link", () => {
-      render(<App />);
+    test("Then it should renderize the header", () => {
+      render(<Button />);
       const linkElement = screen.getByText(/the pointing gentlemen/i);
       expect(linkElement).toBeInTheDocument();
-      const role = screen.getAllByRole("list");
-      expect(role.length).toBe(4);
+      const role = screen.getAllByRole("button");
+      expect(role.length).toBe(1);
     });
   });
 });
