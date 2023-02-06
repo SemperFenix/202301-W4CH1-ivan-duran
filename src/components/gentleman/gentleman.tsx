@@ -17,7 +17,7 @@ export function Gentleman({
         <img
           className="gentleman__avatar"
           src={"img/" + picture}
-          alt="The Fary pointing at you"
+          alt={alternativeText}
         />
         <span className="gentleman__initial">
           {casposoName.charAt(0).toUpperCase()}
