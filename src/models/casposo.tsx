@@ -1,7 +1,7 @@
 export interface Casposo {
   id: number;
   name: string;
-  status: string;
+  status: boolean;
   profession: string;
   twitter: string;
   picture: string;
